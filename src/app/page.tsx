@@ -40,11 +40,7 @@ export default function Home() {
         />
       </div>
 
-      <div className='section3'>
-        <Cadastro>
-          
-        </Cadastro>
-      </div>
+      <Cadastro></Cadastro>
 
       <div className='section4'>
         <div style={{marginTop: '2%'}}><span className='section4Span1'>A Opyt não para de crescer e já somos mais de:</span></div>
