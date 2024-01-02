@@ -1,7 +1,23 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from 'react';
+import { useForm, SubmitHandler } from "react-hook-form"
+
+type Inputs = {
+  Nome: string
+  Email: string
+  Telefone: String
+  Cidade: String
+}
 
 const Cadastro = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<Inputs>()
+  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+  
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [telefone, setTelefone] = useState('');
@@ -21,7 +37,7 @@ const Cadastro = () => {
     setResultado(randomNumber1 + randomNumber2);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit2 = (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitted(true);
 
@@ -38,25 +54,25 @@ const Cadastro = () => {
   return (
     <div className='section3'>
       <span className='section3Span1'><span style={{color: '#F8971F'}}>Preencha os seus dados <br />ou</span> chama no zap!</span>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit(onSubmit) && handleSubmit2}>
         <label className='section3Label'>
           Nome* <br/>
-          <input className='section3Input' type="text" value={nome} onChange={(e) => setNome(e.target.value)} required />
+          <input {...register("Nome")} className='section3Input' type="text" value={nome} onChange={(e) => setNome(e.target.value)} required />
         </label>
         <br/>
         <label className='section3Label'>
           Email* <br/>
-          <input className='section3Input' type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input {...register("Email")} className='section3Input' type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </label>
         <br/>
         <label className='section3Label'>
           Telefone Whatsapp (DDD + Número)* <br/>
-          <input className='section3Input' type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)} required />
+          <input {...register("Telefone")} className='section3Input' type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)} required />
         </label>
         <br/>
         <label className='section3Label'>
           Qual é a sua cidade?* <br/>
-          <input className='section3Input' type="text" value={cidade} onChange={(e) => setCidade(e.target.value)} required />
+          <input {...register("Cidade")} className='section3Input' type="text" value={cidade} onChange={(e) => setCidade(e.target.value)} required />
         </label>
         <br/>
         <label className='section3Label'>

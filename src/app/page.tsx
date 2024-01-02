@@ -13,7 +13,7 @@ import Prop01 from '@/images/Prop01.png'
 import Rev01 from '@/images/Rev01.png'
 import Rev02 from '@/images/Rev02.png'
 import Rev03 from '@/images/Rev03.png'
-import Cadastro from './@cadastro/page'
+import Cadastro from '../components/cadastro'
 
 export default function Home() {
   return (
@@ -40,7 +40,7 @@ export default function Home() {
         />
       </div>
 
-      <Cadastro></Cadastro>
+      <Cadastro/>
 
       <div className='section4'>
         <div style={{marginTop: '2%'}}><span className='section4Span1'>A Opyt não para de crescer e já somos mais de:</span></div>
