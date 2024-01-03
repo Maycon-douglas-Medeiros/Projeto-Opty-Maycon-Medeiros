@@ -2,13 +2,25 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, init prism with mysql:
+First, install all dependencies:
+
+Visual Studio Code:
+(https://code.visualstudio.com/docs/?dv=win64user)
+
+Node.js:
+(https://nodejs.org/en)
+
+```bash
+npm install react-hook-form
+```
+If you don't have prisma install:
+[How to Intall Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/install-prisma-client-typescript-mysql)
+
+Init prism with mysql:
 
 ```bash
 npx prisma init --datasource-provider mysql
 ```
-If you don't have prisma install:
-[How to Intall Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/install-prisma-client-typescript-mysql)
 
 Open the file .env and modify the database_url
 E.G.: DATABASE_URL="mysql://root:123456789@localhost:3306/MyBD"
