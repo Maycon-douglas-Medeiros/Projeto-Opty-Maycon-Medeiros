@@ -18,6 +18,8 @@ Now run:
 npx prisma migrate dev
 ```
 
+## Running the APP
+
 ```bash
 npm run dev
 # or
