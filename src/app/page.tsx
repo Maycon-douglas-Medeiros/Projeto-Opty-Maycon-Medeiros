@@ -25,7 +25,7 @@ export default function Home() {
           alt="Picture of the author"
         />
         <button><span className='section1Span1'>ASSINE AGORA!</span></button>
-        <button><span className='section1Span2'>CHAMA NO ZAP!</span></button>
+        <a href="https://api.whatsapp.com/send?phone=+5562994066070&text=Oi,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20Opyt"><button><span className='section1Span2'>CHAMA NO ZAP!</span></button></a>
       </div>
 
       <div className='section2'>
@@ -59,7 +59,7 @@ export default function Home() {
           alt="Picture of the author"
         />
         <div className='section4Div3'><span className='section4Span2'>7 CIDADES<br/>ATENDIDAS</span></div>
-        <button><span className='section4-button'>CHAMA NO ZAP!</span></button>
+        <a href="https://api.whatsapp.com/send?phone=+5562994066070&text=Oi,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20Opyt"><button><span className='section4-button'>CHAMA NO ZAP!</span></button></a>
       </div>
 
       <div className='section5'>
@@ -67,7 +67,7 @@ export default function Home() {
           src={Prop01}
           alt="Picture of the author"
         />
-        <button><span className='section5Span1'>CHAMA NO ZAP!</span></button>
+        <a href="https://api.whatsapp.com/send?phone=+5562994066070&text=Oi,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20Opyt"><button><span className='section5Span1'>CHAMA NO ZAP!</span></button></a>
         <Image className='section5Rev1'
           src={Rev01}
           alt="Picture of the author"
@@ -88,18 +88,24 @@ export default function Home() {
           alt="Picture of the author"
         />
         <span className='section6Span1'>© 2023 Opyt LTDA. Todos os direitos reservados</span>
-        <Image className='section6IconF'
+        <a href="https://www.facebook.com/opytnet/">
+          <Image className='section6IconF'
           src={IconF}
           alt="Picture of the author"
         />
+        </a>
+        <a href="https://www.instagram.com/opytnet/">
         <Image className='section6IconI'
           src={IconI}
           alt="Picture of the author"
         />
+        </a>
+        <a href="https://www.linkedin.com/company/opyt/">
         <Image className='section6IconL'
           src={IconL}
           alt="Picture of the author"
         />
+        </a>
       </div>
     </div>
   )
