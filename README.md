@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, init prism with mysql:
+
+```bash
+npx prisma init --datasource-provider mysql
+```
+If you don't have prisma install:
+[How to Intall Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/install-prisma-client-typescript-mysql)
 
 ```bash
 npm run dev
@@ -13,4 +19,6 @@ pnpm dev
 # or
 bun dev
 ```
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
