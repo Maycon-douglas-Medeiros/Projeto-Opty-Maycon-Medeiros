@@ -69,7 +69,7 @@ const Cadastro = () => {
         </label>
         <br/>
         <label className='section3Label'>
-          Telefone Whatsapp (DDD + Número)* <br/>
+          Telefone Whatsapp (DD + Número)* <br/>
           <input {...register("Telefone")} className='section3Input' type="tel" required />
         </label>
         <br/>

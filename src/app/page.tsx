@@ -1,21 +1,25 @@
-import Image from 'next/image'
-import Logo from '@/images/Logo.png'
-import LogoF from '@/images/LogoF.png'
-import Plano01 from '@/images/Plano01.png'
-import Plano02 from '@/images/Plano02.png'
-import IconT from '@/images/Icon_T.png'
-import IconS from '@/images/Icon_S.png'
-import IconH from '@/images/Icon_H.png'
-import IconF from '@/images/Icon_F.png'
-import IconI from '@/images/Icon_I.png'
-import IconL from '@/images/Icon_L.png'
-import Prop01 from '@/images/Prop01.png'
-import Rev01 from '@/images/Rev01.png'
-import Rev02 from '@/images/Rev02.png'
-import Rev03 from '@/images/Rev03.png'
-import Cadastro from '../components/cadastro'
+"use client";
+import Image from 'next/image';
+import Logo from '@/images/Logo.png';
+import LogoF from '@/images/LogoF.png';
+import Plano01 from '@/images/Plano01.png';
+import Plano02 from '@/images/Plano02.png';
+import IconT from '@/images/Icon_T.png';
+import IconS from '@/images/Icon_S.png';
+import IconH from '@/images/Icon_H.png';
+import IconF from '@/images/Icon_F.png';
+import IconI from '@/images/Icon_I.png';
+import IconL from '@/images/Icon_L.png';
+import Prop01 from '@/images/Prop01.png';
+import Rev01 from '@/images/Rev01.png';
+import Rev02 from '@/images/Rev02.png';
+import Rev03 from '@/images/Rev03.png';
+import Cadastro from '../components/cadastro';
 
 export default function Home() {
+  const showAlert = () => {
+    alert('SE CADASTRE OU CHAME NO ZAP!');
+  };
   return (
     <div className='principal'>
 
@@ -24,7 +28,7 @@ export default function Home() {
           src={Logo}
           alt="Picture of the author"
         />
-        <button><span className='section1Span1'>ASSINE AGORA!</span></button>
+        <button onClick={showAlert}><span className='section1Span1'>ASSINE AGORA!</span></button>
         <a href="https://api.whatsapp.com/send?phone=+5562994066070&text=Oi,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20Opyt"><button><span className='section1Span2'>CHAMA NO ZAP!</span></button></a>
       </div>
 
