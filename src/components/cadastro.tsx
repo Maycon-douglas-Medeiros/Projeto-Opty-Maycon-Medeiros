@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { useForm, SubmitHandler } from "react-hook-form"
+import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
   Nome: string;
@@ -19,7 +19,7 @@ const Cadastro = () => {
 
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
-  const [userSoma, setUserSoma] = useState<number | null>(null); // New state for user's input
+  const [userSoma, setUserSoma] = useState<number | null>(null);
 
   useEffect(() => {
     const randomNumber1 = Math.floor(Math.random() * 10) + 1;
