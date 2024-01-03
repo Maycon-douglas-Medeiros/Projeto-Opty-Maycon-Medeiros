@@ -10,6 +10,14 @@ npx prisma init --datasource-provider mysql
 If you don't have prisma install:
 [How to Intall Prisma](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/install-prisma-client-typescript-mysql)
 
+Open the file .env and modify the database_url
+E.G.: DATABASE_URL="mysql://root:123456789@localhost:3306/MyBD"
+
+Now run:
+```bash
+npx prisma migrate dev
+```
+
 ```bash
 npm run dev
 # or
@@ -19,6 +27,5 @@ pnpm dev
 # or
 bun dev
 ```
-
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
