@@ -345,5 +345,193 @@
 }
 
 @media screen and (max-width: 768px){
+    .logo {
+        width: 25%;
+        height: 65%;
+        top: 10%;
+        left: 2%;
+    }
+
+    .section1Span1 {
+        width: 30%; 
+        height: 45%;
+        top: 25%; 
+        left: 32%;
+        font-size: 75%;
+    }
     
+    .section1Span2 {
+        width: 30%; 
+        height: 45%;
+        top: 25%; 
+        left: 66%;
+        font-size: 75%;
+    }
+
+    .section2 {
+        width: 100%;
+        height: 69%;
+        top: 10%;
+        left: 0%;
+    }
+
+    .plano1 {
+        width: 92%;
+        height: 34%;
+        top: 4%;
+        left: 3%;
+    }
+    
+    .plano2 {
+        width: 92%;
+        height: 34%;
+        top: 5%;
+        left: 3%;
+    }
+    
+    .section3 {
+        text-align: center;
+        width: 100%;
+        height: 75%;
+        top: 82%;
+        left: 0%;
+    }
+
+    .section3Span1 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    
+    .section3Button1 {
+        margin: 3% 0% 0% 3%;
+    }
+    
+    .section3Button2 {
+        margin: 3% 0% 0% 3%;
+    }
+
+    .section4 {
+        width: 100%;
+        height: 35%;
+        top: 155%;
+    }
+    
+    .section4Span2 {
+        font-size: 80%; 
+    }
+    
+    .section4Div1 {
+        margin-top: 4.5%;
+        left: 0.5%;
+    }
+    
+    .section4Div2 {
+        margin-top: 4.5%;
+        left: 40%;
+    }
+    
+    .section4Div3 {
+        margin-top: 4.5%;
+        left: 76%;
+    }
+    
+    .section4 .icon1 {
+        width: 15%;
+        top: 6%;
+        left: -18%;
+    }
+    
+    .section4 .icon2 {
+        width: 15%;
+        top: 6%;
+        left: 3%;
+    }
+    
+    .section4 .icon3 {
+        width: 18%;
+        top: 6%;
+        left: 22%;
+    }
+    
+    .section4 button {
+        width: 50%;
+        height: 17%;
+        top: 75%;
+        left: 25%;
+        font-size: 100%;
+    }
+
+    .section5 {
+        top: 190%;
+        height: 75%;
+    }
+    
+    .section5Prop1 {
+        width: 100%;
+        height: 45%;
+        left: 0%;
+    }
+    
+    .section5Span1{
+        border-radius: 5px;
+        width: 50%;
+        height: 5%;
+        top: 46%;
+        left: 25%;
+        font-size: 100%; 
+    }
+    
+    .section5Rev1 {
+        width: 30%;
+        height: 40%;
+        left: 3%;
+        top: 52.5%;
+    }
+    
+    .section5Rev2 {
+        width: 30%;
+        height: 40%;
+        left: 35.5%;
+        top: 52.5%;
+    }
+    
+    .section5Rev3 {
+        width: 30%;
+        height: 40%;
+        left: 67.8%;
+        top: 52.5%;
+    }
+
+    .section6 {
+        top: 260%;
+    }
+
+    .section6Span1 {
+        top: 40%;
+        left: 20%;
+        font-size: 35%;
+    }
+    
+    .section6LogoF {
+        width: 13%;
+        left: 5%;
+    }
+    
+    .section6IconF {
+        width: 7%;
+        height: 40%;
+        left: 70%;
+    }
+    
+    .section6IconI {
+        width: 7%;
+        height: 40%;
+        left: 80%;
+    }
+    
+    .section6IconL {
+        width: 7%;
+        height: 40%;
+        left: 90%;
+    }
 }
